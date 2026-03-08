@@ -1,0 +1,31 @@
+{
+  "name": "voc-agent",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node agent/agent.js",
+    "weekly": "node scheduler/weeklyRun.js",
+    "dev": "nodemon agent/agent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.6",
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.3.1",
+    "groq-sdk": "^0.37.0",
+    "node-cron": "^4.2.1",
+    "openclaw": "^2026.3.2",
+    "playwright": "^1.58.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
