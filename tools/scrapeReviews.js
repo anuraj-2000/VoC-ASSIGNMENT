@@ -70,7 +70,7 @@ try {
 
   if (reviews.length === 0) {
 
-    console.log("No reviews detected, using demo reviews");
+    console.log("No reviews detected");
 
     return []
     ;
