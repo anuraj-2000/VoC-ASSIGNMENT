@@ -72,20 +72,8 @@ try {
 
     console.log("No reviews detected, using demo reviews");
 
-    return [
-      {
-        product_name: productName,
-        rating: 5,
-        title: "Great Sound",
-        text: "Sound quality is amazing"
-      },
-      {
-        product_name: productName,
-        rating: 3,
-        title: "Battery Issue",
-        text: "Battery drains faster than expected"
-      }
-    ];
+    return []
+    ;
 
   }
 

@@ -26,6 +26,10 @@ async function runAgent() {
     console.log("Scraping reviews:", url);
 
     const reviews = await scrapeReviews(url);
+    if (!reviews || reviews.length === 0) {
+  console.log("No reviews to process for:", url);
+  continue;
+}
 
     console.log("Reviews scraped:", reviews.length);
 
